@@ -21,42 +21,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Ben Cwik's personal web site">
+  <meta name="author" content="Ben Cwik">
   <link rel="icon" href="../../favicon.ico">
   
   <title>Ben Cwik</title>
 
 </head>
 <body>
-  <div class="site-wrapper">
-    <div class="site-wrapper-inner">
-      <div class="cover-container">
-	<div class="masthead clearfix">
-	  <div class="inner">
-	    <h3 class="masthead-brand">BenCwik</h3>
-	    <nav>
-              <ul class="nav masthead-nav">
-		<li class="active"><%= link_to "Home", root_path %></li>
-		<li><%= link_to "GitHub", "https://github.com/bcwik9" %></li>
-		<li><%= link_to "Projects", comingsoon_path %></li>
-		<li><%= link_to "Contact", comingsoon_path %></li>
-              </ul>
-	    </nav>
-	  </div>
-	</div>
-
-	<%= yield %>
-
-	<div class="mastfoot">
-	  <div class="inner">
-	    <p>&copy; Ben Cwik 2015</p>
-	  </div>
-	</div>
-
-      </div>
-    </div>
-  </div>
+  <%= yield %>
 
   <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   <%= javascript_include_tag 'ie10-viewport-bug-workaround' %>
