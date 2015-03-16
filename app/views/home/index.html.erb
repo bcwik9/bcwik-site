@@ -9,398 +9,400 @@
   <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-                    <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll rotate" href="#page-top">
-                    <span class="light"> Ben</span> Cwik
-                </a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-                <ul class="nav navbar-nav">
-                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#about"><i class="fa fa-user"></i> About</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#portfolio"><i class="fa fa-folder-open"></i> Portfolio</a>
-                    </li>
-
-                    <li>
-                        <a class="page-scroll" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+          <a class="navbar-brand page-scroll rotate" href="#page-top">
+            <span class="light"> Ben</span> Cwik
+          </a>
         </div>
-        <!-- /.container -->
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+          <ul class="nav navbar-nav">
+            <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+            <li class="hidden">
+              <a href="#page-top"></a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#about"><i class="fa fa-user"></i> About</a>
+            </li>
+            <li>
+              <a class="page-scroll" href="#portfolio"><i class="fa fa-folder-open"></i> Portfolio</a>
+            </li>
+
+            <li>
+              <a class="page-scroll" href="#contact"><i class="fa fa-envelope"></i> Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
     </nav>
 
     <!-- Intro Header -->
     <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Hey there.</h1>
-                        <p class="intro-text">My name is Ben Cwik and this is my site. Have a look around!</p>
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <h1 class="brand-heading">Hey there.</h1>
+              <p class="intro-text">My name is Ben Cwik and this is my site. Have a look around!</p>
+              <a href="#about" class="btn btn-circle page-scroll">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
             </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <!-- About Section -->
     <section id="about" class="content-section text-center">
-        <div class="about-section">
-            <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
-                    <h2>About Me</h2>
-		    <p>I'm a software engineer, cook, motorcycle enthusiast, photographer, and skier. I’ve recently become obsessed with learning Ruby on Rails and other full-stack software (Amazon AWS, bootstap, and nginx) on my own. In my spare time I enjoy cooking amazing food (and obviously taking pictures of it), skiing through frozen glades, and exploring new places in New York City.</p>
-                </div>
-            </div>
+      <div class="about-section">
+        <div class="container">
+          <div class="col-lg-8 col-lg-offset-2">
+            <h2>About Me</h2>
+	    <p>I'm a software engineer, cook, motorcycle enthusiast, photographer, and skier. I’ve recently become obsessed with learning Ruby on Rails and other full-stack software (Amazon AWS, bootstap, and nginx) on my own. In my spare time I enjoy cooking amazing food (and obviously taking pictures of it), skiing through frozen glades, and exploring new places in New York City.</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Portfolio Grid Section -->
     <section id="portfolio" class="portfolio-secion">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Portfolio</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                              <i class="fa fa-search-plus"></i>
-			      Survey Forms
-                            </div>
-                        </div>
-			<%= image_tag 'question-proj.jpg', class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus"></i>
-				Dance Trainer's Personal Career Site
-                            </div>
-                        </div>
-			<%= image_tag 'dancer-proj.jpg', class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus"></i>
-				Alien Captcha
-                            </div>
-                        </div>
-			<%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
-
-                    </a>
-                </div>
-<!--                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-			<%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-			<%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
-                    </a>
-                </div>
-                <div class="col-sm-4 portfolio-item">
-                    <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
-                        <div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>
-			<%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
-                    </a>
-                </div> -->
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2>Portfolio</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus"></i>
+		  Rails AWS Cloudformation Generator
+                </div>
+              </div>
+	      <%= image_tag 'railscloudform-proj.jpg', class: 'img-responsive' %>
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus"></i>
+		  Dance Trainer's Personal Career Site
+                </div>
+              </div>
+	      <%= image_tag 'dancer-proj.jpg', class: 'img-responsive' %>
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus"></i>
+		  Alien Captcha
+                </div>
+              </div>
+	      <%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
+
+            </a>
+          </div>
+          <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+              <div class="caption">
+                <div class="caption-content">
+                  <i class="fa fa-search-plus"></i>
+		  Survey Forms
+                </div>
+              </div>
+	      <%= image_tag 'question-proj.jpg', class: 'img-responsive' %>
+            </a>
+          </div>
+	  <!--
+              <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+		  <%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
+                </a>
+              </div>
+              <div class="col-sm-4 portfolio-item">
+                <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                  <div class="caption">
+                    <div class="caption-content">
+                      <i class="fa fa-search-plus fa-3x"></i>
+                    </div>
+                  </div>
+		  <%= image_tag 'alien-proj.jpg', class: 'img-responsive' %>
+                </a>
+              </div> -->
+        </div>
+      </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container content-section text-center">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h2>Contact</h2>
-                <p>Feel free to email me for more information or to contact me regarding work.</p>
-                <p><a href="mailto:bcwik.9@gmail.com">bcwik.9@gmail.com</a>
-                </p>
-                <ul class="list-inline banner-social-buttons">
-                    <li>
-                        <a href="https://github.com/bcwik9" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
-                    </li>
-                    <li>
-                        <a href="http://www.linkedin.com/pub/ben-cwik/67/508/921/en" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
-                    </li>
-		    <li>
-                        <a href="https://instagram.com/bcwik9/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
-		    </li>
-                </ul>
-            </div>
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2">
+          <h2>Contact</h2>
+          <p>Feel free to email me for more information or to contact me regarding work.</p>
+          <p><a href="mailto:bcwik.9@gmail.com">bcwik.9@gmail.com</a>
+          </p>
+          <ul class="list-inline banner-social-buttons">
+            <li>
+              <a href="https://github.com/bcwik9" class="btn btn-default btn-lg"><i class="fa fa-github fa-fw"></i> <span class="network-name">Github</span></a>
+            </li>
+            <li>
+              <a href="http://www.linkedin.com/pub/ben-cwik/67/508/921/en" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">LinkedIn</span></a>
+            </li>
+	    <li>
+              <a href="https://instagram.com/bcwik9/" class="btn btn-default btn-lg"><i class="fa fa-instagram fa-fw"></i> <span class="network-name">Instagram</span></a>
+	    </li>
+          </ul>
         </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div class="container text-center">
-            <p>Copyright &copy; Ben Cwik 2015</p>
-        </div>
+      <div class="container text-center">
+        <p>Copyright &copy; Ben Cwik 2015</p>
+      </div>
     </footer>
 
     <!-- Portfolio Modals -->
     <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Survey Forms</h2>
-                            <hr class="star-primary">
-			    <%= link_to image_tag('question-site.jpg', class: 'img-responsive img-centered'), "http://questionnaire.bencwik.com" %>
-                            <p>Users can create and fill out surveys, and view the responses. Utilizes Ruby on Rails w/ rpsec and bootstrap. Website is hosted on Amazon AWS.</p>
-                            <ul class="list-inline item-details">
-                                <li>Website:
-                                    <strong><a href="http://questionnaire.bencwik.com">questionnaire.bencwik.com</a>
-                                    </strong>
-                                </li>
-                                <li>Code:
-                                    <strong><a href="https://github.com/bcwik9/questionnaire-forms"> Github</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong>February 2014
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Survey Forms</h2>
+                <hr class="star-primary">
+		<%= link_to image_tag('question-site.jpg', class: 'img-responsive img-centered'), "http://questionnaire.bencwik.com" %>
+                <p>Users can create and fill out surveys, and view the responses. Utilizes Ruby on Rails w/ rpsec and bootstrap. Website is hosted on Amazon AWS.</p>
+                <ul class="list-inline item-details">
+                  <li>Website:
+                    <strong><a href="http://questionnaire.bencwik.com">questionnaire.bencwik.com</a>
+                    </strong>
+                  </li>
+                  <li>Code:
+                    <strong><a href="https://github.com/bcwik9/questionnaire-forms"> Github</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong>February 2014
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Dance Trainer's Personal Career Website</h2>
-                            <hr class="star-primary">
-			    <%= link_to image_tag('dancer-site.jpg', class: 'img-responsive img-centered'), "http://traceymunn.com" %>
-                            <p>Personal career website I designed and implemented for a friend. Based on Ruby on Rails with bootstrap. Has a lot of media such as Youtube videos and various pictures, along with resume section with links to relevant companies. Hosted on Amazon AWS.</p>
-                            <ul class="list-inline item-details">
-                                <li>Website:
-                                    <strong><a href="http://traceymunn.com"> traceymunn.com</a>
-                                    </strong>
-                                </li>
-                                <li>Code:
-                                    <strong><a href="https://github.com/bcwik9/tmoney"> Github</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong> December 2014
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Dance Trainer's Personal Career Website</h2>
+                <hr class="star-primary">
+		<%= link_to image_tag('dancer-site.jpg', class: 'img-responsive img-centered'), "http://traceymunn.com" %>
+                <p>Personal career website I designed and implemented for a friend. Based on Ruby on Rails with bootstrap. Has a lot of media such as Youtube videos and various pictures, along with resume section with links to relevant companies. Hosted on Amazon AWS.</p>
+                <ul class="list-inline item-details">
+                  <li>Website:
+                    <strong><a href="http://traceymunn.com"> traceymunn.com</a>
+                    </strong>
+                  </li>
+                  <li>Code:
+                    <strong><a href="https://github.com/bcwik9/tmoney"> Github</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong> December 2014
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Alien Captcha</h2>
-                            <hr class="star-primary">
-			    <%= link_to image_tag('alien-site.jpg', class: 'img-responsive img-centered'), "http://alientrolls.bencwik.com" %>
-                            <p>Very basic site which asks the user to count the number words in a given sentence, but ignoring some words. User submits their response and the server determines if they are correct. Based on Ruby on Rails and hosted on Amazon AWS.</p>
-                            <ul class="list-inline item-details">
-                                <li>Website:
-                                    <strong><a href="http://alientrolls.bencwik.com"> alientrolls.bencwik.com</a>
-                                    </strong>
-                                </li>
-                                <li>Code:
-                                    <strong><a href="https://github.com/bcwik9/antitrollaliens"> Github</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong> January 2015
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Alien Captcha</h2>
+                <hr class="star-primary">
+		<%= link_to image_tag('alien-site.jpg', class: 'img-responsive img-centered'), "http://alientrolls.bencwik.com" %>
+                <p>Very basic site which asks the user to count the number words in a given sentence, but ignoring some words. User submits their response and the server determines if they are correct. Based on Ruby on Rails and hosted on Amazon AWS.</p>
+                <ul class="list-inline item-details">
+                  <li>Website:
+                    <strong><a href="http://alientrolls.bencwik.com"> alientrolls.bencwik.com</a>
+                    </strong>
+                  </li>
+                  <li>Code:
+                    <strong><a href="https://github.com/bcwik9/antitrollaliens"> Github</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong> January 2015
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-			    <%= image_tag 'alien-proj.jpg', class: 'img-responsive img-centered' %>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Rails AWS Cloud Formation Generator</h2>
+                <hr class="star-primary">
+		<%= link_to image_tag('railscloudform-site.jpg', class: 'img-responsive img-centered'), "http://railscloudform.bencwik.com" %>
+                <p>Easily create one-click Ruby on Rails project AWS Cloudformation templates</p>
+                <ul class="list-inline item-details">
+                  <li>Website:
+                    <strong><a href="http://railscloudform.bencwik.com"> alientrolls.bencwik.com</a>
+                    </strong>
+                  </li>
+                  <li>Code:
+                    <strong><a href="https://github.com/bcwik9/pass-genginx"> Github</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong> March 2015
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-			    <%= image_tag 'alien-proj.jpg', class: 'img-responsive img-centered' %>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project Title</h2>
+                <hr class="star-primary">
+		<%= image_tag 'alien-proj.jpg', class: 'img-responsive img-centered' %>
+                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                    </strong>
+                  </li>
+                  <li>Service:
+                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
+      <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+          <div class="lr">
+            <div class="rl">
             </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-8 col-lg-offset-2">
-                        <div class="modal-body">
-                            <h2>Project Title</h2>
-                            <hr class="star-primary">
-			    <%= image_tag 'alien-proj.jpg', class: 'img-responsive img-centered' %>
-                            <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
-                            <ul class="list-inline item-details">
-                                <li>Client:
-                                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
-                                    </strong>
-                                </li>
-                                <li>Date:
-                                    <strong><a href="http://startbootstrap.com">April 2014</a>
-                                    </strong>
-                                </li>
-                                <li>Service:
-                                    <strong><a href="http://startbootstrap.com">Web Development</a>
-                                    </strong>
-                                </li>
-                            </ul>
-                            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+              <div class="modal-body">
+                <h2>Project Title</h2>
+                <hr class="star-primary">
+		<%= image_tag 'alien-proj.jpg', class: 'img-responsive img-centered' %>
+                <p>Use this area of the page to describe your project. The icon above is part of a free icon set by <a href="https://sellfy.com/p/8Q9P/jV3VZ/">Flat Icons</a>. On their website, you can download their free set with 16 icons, or you can purchase the entire set with 146 icons for only $12!</p>
+                <ul class="list-inline item-details">
+                  <li>Client:
+                    <strong><a href="http://startbootstrap.com">Start Bootstrap</a>
+                    </strong>
+                  </li>
+                  <li>Date:
+                    <strong><a href="http://startbootstrap.com">April 2014</a>
+                    </strong>
+                  </li>
+                  <li>Service:
+                    <strong><a href="http://startbootstrap.com">Web Development</a>
+                    </strong>
+                  </li>
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- plugin javascript -->
