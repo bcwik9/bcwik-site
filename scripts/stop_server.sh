@@ -1,2 +1,6 @@
 #!/bin/bash
-sudo 'killall ruby 2>/dev/null'
+if [ "`pidof ruby`" == "" ]; then
+    exit
+fi
+echo "Killing `pidof ruby`"
+sudo kill -9 `pidof ruby`
