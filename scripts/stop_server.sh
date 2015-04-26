@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo killall ruby
+sudo killall ruby 2>/dev/null
