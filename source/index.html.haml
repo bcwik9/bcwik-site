@@ -1,0 +1,355 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    / google analytics
+    :javascript
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-59673522-3', 'auto');
+      ga('send', 'pageview');
+    %title Ben Cwik
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}/
+    / The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags
+    %meta{:content => "Ben Cwik's personal web site", :name => "description"}/
+    %meta{:content => "Ben Cwik", :name => "author"}/
+    %link{:href => "../../favicon.ico", :rel => "icon"}/
+    %link{:href => "app/assets/stylesheets/bootstrap_and_overrides.css", :rel => "stylesheet", :type => "text/css"}/
+    / Custom Fonts
+    %link{:href => "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
+    %link{:crossorigin => "anonymous", :href => "https://use.fontawesome.com/releases/v5.7.2/css/all.css", :integrity => "sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr", :rel => "stylesheet"}/
+  %body#page-top{"data-spy" => "scroll", "data-target" => ".navbar-fixed-top"}
+    / Navigation
+    %nav.navbar.navbar-custom.navbar-fixed-top{:role => "navigation"}
+      .container
+        .navbar-header
+          %button.navbar-toggle{"data-target" => ".navbar-main-collapse", "data-toggle" => "collapse", :type => "button"}
+            %i.fas.fa-bars
+          %a.navbar-brand.page-scroll.rotate{:href => "#page-top"}
+            %span.light Ben
+            Cwik
+        / Collect the nav links, forms, and other content for toggling
+        .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+          %ul.nav.navbar-nav
+            / Hidden li included to remove active class from about link when scrolled up past about section
+            %li.hidden
+              %a{:href => "#page-top"}
+            %li
+              %a.page-scroll{:href => "#about"}
+                %i.fas.fa-user
+                About
+            %li
+              %a.page-scroll{:href => "#portfolio"}
+                %i.fas.fa-folder-open
+                Portfolio
+            %li
+              %a.page-scroll{:href => "#contact"}
+                %i.fas.fa-envelope
+                Contact
+        / /.navbar-collapse
+      / /.container
+    / Intro Header
+    %header.intro
+      .intro-body
+        .container
+          .row
+            .col-md-8.col-md-offset-2
+              %h1.brand-heading Hey there.
+              %p.intro-text My name is Ben Cwik and this is my site. Have a look around!
+              %a#action-button.btn.btn-circle.page-scroll{:href => "#about"}
+                %i.fas.fa-angle-double-down.animated
+    / About Section
+    %section#about.content-section.text-center
+      .about-section
+        .container
+          .col-lg-8.col-lg-offset-2
+            %h2 About Me
+            %p I'm a software engineer, cook, motorcycle enthusiast, photographer, and skier. I’ve recently become obsessed with learning Ruby on Rails and other full-stack software (Amazon AWS, bootstap, and nginx) on my own. In my spare time I enjoy cooking amazing food (and obviously taking pictures of it), skiing through frozen glades, and exploring new places in New York City.
+    / Portfolio Grid Section
+    %section#portfolio.portfolio-secion
+      .container
+        .row
+          .col-lg-12.text-center
+            %h2 Portfolio
+        .row
+          .col-sm-4.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal6"}
+              .caption
+                .caption-content
+                  %i.fas.fa-search-plus
+                  Buster: Online Charter Transportation Booking Platform
+              %img.img-responsive{:src => "app/assets/images/buster-proj.jpg"}/
+          .col-sm-4.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal1"}
+              .caption
+                .caption-content
+                  %i.fas.fa-search-plus
+                  Survey Forms
+              %img.img-responsive{:src => "app/assets/images/question-proj.jpg"}/
+          .col-sm-4.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
+              .caption
+                .caption-content
+                  %i.fas.fa-search-plus
+                  Dance Trainer's Personal Career Site
+              %img.img-responsive{:src => "app/assets/images/dancer-proj.jpg"}/
+          .col-sm-4.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal4"}
+              .caption
+                .caption-content
+                  %i.fas.fa-search-plus
+                  Rails AWS Cloudformation Generator
+              %img.img-responsive{:src => "app/assets/images/railscloudform-proj.jpg"}/
+          .col-sm-4.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal5"}
+              .caption
+                .caption-content
+                  %i.fas.fa-search-plus
+                  Athlete JSON Service
+              %img.img-responsive{:src => "app/assets/images/sport-proj.jpg"}/
+          .col-sm-4.portfolio-item
+            %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
+              .caption
+                .caption-content
+                  %i.fas.fa-search-plus
+                  Basic Captcha
+              %img.img-responsive{:src => "app/assets/images/alien-proj.jpg"}/
+          /
+            <div class="col-sm-4 portfolio-item">
+            <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+            <div class="caption-content">
+            <i class="fas fa-search-plus fa-3x"></i>
+            </div>
+            </div>
+            <img src='app/assets/images/alien-proj.jpg' class='img-responsive'>
+            </a>
+            </div>
+    / Contact Section
+    %section#contact.container.content-section.text-center
+      .row
+        .col-lg-8.col-lg-offset-2
+          %h2 Contact
+          %p Feel free to email me for more information or to contact me regarding work.
+          %p
+            %a{:href => "mailto:bcwik.9@gmail.com"} bcwik.9@gmail.com
+          %ul.list-inline.banner-social-buttons
+            %li
+              %a.btn.btn-default.btn-lg{:href => "https://github.com/bcwik9"}
+                %i.fab.fa-github.fa-fw
+                %span.network-name Github
+            %li
+              %a.btn.btn-default.btn-lg{:href => "http://www.linkedin.com/pub/ben-cwik/67/508/921/en"}
+                %i.fab.fa-linkedin.fa-fw
+                %span.network-name LinkedIn
+            %li
+              %a.btn.btn-default.btn-lg{:href => "https://instagram.com/bcwik9/"}
+                %i.fab.fa-instagram.fa-fw
+                %span.network-name Instagram
+    / Footer
+    %footer
+      .container.text-center
+        %p Copyright © Ben Cwik 2019
+    / Portfolio Modals
+    #portfolioModal1.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Survey Forms
+                %hr.star-primary/
+                %a{:href => "http://questionnaire.bencwik.com"}
+                  %img.img-responsive.img-centered{:src => "app/assets/images/question-site.jpg"}/
+                %p Users can create and fill out surveys, and view the responses. Utilizes Ruby on Rails w/ rpsec and bootstrap. Website is hosted on Amazon AWS.
+                %ul.list-inline.item-details
+                  %li
+                    Website:
+                    %strong
+                      %a{:href => "http://questionnaire.bencwik.com"} questionnaire.bencwik.com
+                  %li
+                    Code:
+                    %strong
+                      %a{:href => "https://github.com/bcwik9/questionnaire-forms"} Github
+                  %li
+                    Date:
+                    %strong
+                      February 2015
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fas.fa-times
+                  Close
+    #portfolioModal2.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Dance Trainer's Personal Career Website
+                %hr.star-primary/
+                %a{:href => "http://traceymunn.com"}
+                  %img.img-responsive.img-centered{:src => "app/assets/images/dancer-site.jpg"}/
+                %p Personal career website I designed and implemented. Based on Ruby on Rails with Bootstrap. Has a lot of media such as Youtube videos and various pictures, along with resume section with links to relevant companies. Hosted on Amazon AWS.
+                %ul.list-inline.item-details
+                  %li
+                    Website:
+                    %strong
+                      %a{:href => "http://traceymunn.com"} traceymunn.com
+                  %li
+                    Code:
+                    %strong
+                      %a{:href => "https://github.com/bcwik9/tmoney"} Github
+                  %li
+                    Date:
+                    %strong
+                      December 2014
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fas.fa-times
+                  Close
+    #portfolioModal3.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Basic Captcha
+                %hr.star-primary/
+                %a{:href => "http://alientrolls.bencwik.com"}
+                  %img.img-responsive.img-centered{:src => "app/assets/images/alien-site.jpg"}/
+                %p Very basic site which asks the user to count the number words in a given sentence, but ignoring some words. User submits their response and the server determines if they are correct. Based on Ruby on Rails and hosted on Amazon AWS.
+                %ul.list-inline.item-details
+                  %li
+                    Website:
+                    %strong
+                      %a{:href => "http://alientrolls.bencwik.com"} alientrolls.bencwik.com
+                  %li
+                    Code:
+                    %strong
+                      %a{:href => "https://github.com/bcwik9/antitrollaliens"} Github
+                  %li
+                    Date:
+                    %strong
+                      January 2015
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fas.fa-times
+                  Close
+    #portfolioModal4.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Rails AWS Cloud Formation Generator
+                %hr.star-primary/
+                %a{:href => "http://railscloudform.bencwik.com"}
+                  %img.img-responsive.img-centered{:src => "app/assets/images/railscloudform-site.jpg"}/
+                %p Easily create one-click Ruby on Rails project AWS Cloudformation templates
+                %ul.list-inline.item-details
+                  %li
+                    Website:
+                    %strong
+                      %a{:href => "http://railscloudform.bencwik.com"} railscloudform.bencwik.com
+                  %li
+                    Code:
+                    %strong
+                      %a{:href => "https://github.com/bcwik9/pass-genginx"} Github
+                  %li
+                    Date:
+                    %strong
+                      March 2015
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fas.fa-times
+                  Close
+    #portfolioModal5.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Athlete JSON Service
+                %hr.star-primary/
+                %a{:href => "http://athleteinfo.bencwik.com"}
+                  %img.img-responsive.img-centered{:src => "app/assets/images/sport-proj.jpg"}/
+                %p A simple service which returns player information in JSON format. Supports URL query params, such as position=QB. Data is imported from CBS Sports API.
+                %ul.list-inline.item-details
+                  %li
+                    Website:
+                    %strong
+                      %a{:href => "http://athleteinfo.bencwik.com"} athleteinfo.bencwik.com
+                  %li
+                    Code:
+                    %strong
+                      %a{:href => "https://github.com/bcwik9/sport-import"} Github
+                  %li
+                    Date:
+                    %strong
+                      March 2015
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fas.fa-times
+                  Close
+    #portfolioModal6.portfolio-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-content
+        .close-modal{"data-dismiss" => "modal"}
+          .lr
+            .rl
+        .container
+          .row
+            .col-lg-8.col-lg-offset-2
+              .modal-body
+                %h2 Buster: Online Charter Transportation Booking Platform
+                %hr.star-primary/
+                %img.img-responsive.img-centered{:src => "app/assets/images/buster-site.jpg"}/
+                %p
+                  %a{:href => "https://buster.com"} Buster.com
+                  is an online booking platform for chartered group transportation. I joined the company in May 2015.
+                %ul.list-inline.item-details
+                  %li
+                    Website:
+                    %strong
+                      %a{:href => "https://buster.com"} Buster.com
+                  %li
+                    Date:
+                    %strong
+                      Ongoing
+                %button.btn.btn-default{"data-dismiss" => "modal", :type => "button"}
+                  %i.fas.fa-times
+                  Close
+    / plugin javascript
+    %script{:src => "app/assets/javascripts/jquery.js"}
+    %script{:src => "app/assets/javascripts/jquery_ujs.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=", :src => "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"}
+    %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/affix.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/alert.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/button.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/carousel.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/collapse.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/dropdown.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/modal.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/scrollspy.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/tab.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/tooltip.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/transition.js"}
+    %script{:src => "app/assets/javascripts/bootstrap/popover.js"}
+    %script{:src => "app/assets/javascripts/classie.js"}
+    %script{:src => "app/assets/javascripts/cbpAnimatedHeader.js"}
+    %script{:src => "app/assets/javascripts/grayscale.js"}
