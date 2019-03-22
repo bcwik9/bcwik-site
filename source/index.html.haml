@@ -18,7 +18,7 @@
     %meta{:content => "Ben Cwik's personal web site", :name => "description"}/
     %meta{:content => "Ben Cwik", :name => "author"}/
     %link{:href => "../../favicon.ico", :rel => "icon"}/
-    %link{:href => "app/assets/stylesheets/bootstrap_and_overrides.css", :rel => "stylesheet", :type => "text/css"}/
+    %link{:href => "stylesheets/bootstrap_and_overrides.css", :rel => "stylesheet", :type => "text/css"}/
     / Custom Fonts
     %link{:href => "https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", :rel => "stylesheet", :type => "text/css"}/
     %link{:href => "https://fonts.googleapis.com/css?family=Montserrat:400,700", :rel => "stylesheet", :type => "text/css"}/
@@ -83,42 +83,42 @@
                 .caption-content
                   %i.fas.fa-search-plus
                   Buster: Online Charter Transportation Booking Platform
-              %img.img-responsive{:src => "app/assets/images/buster-proj.jpg"}/
+              %img.img-responsive{:src => "images/buster-proj.jpg"}/
           .col-sm-4.portfolio-item
             %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal1"}
               .caption
                 .caption-content
                   %i.fas.fa-search-plus
                   Survey Forms
-              %img.img-responsive{:src => "app/assets/images/question-proj.jpg"}/
+              %img.img-responsive{:src => "images/question-proj.jpg"}/
           .col-sm-4.portfolio-item
             %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal2"}
               .caption
                 .caption-content
                   %i.fas.fa-search-plus
                   Dance Trainer's Personal Career Site
-              %img.img-responsive{:src => "app/assets/images/dancer-proj.jpg"}/
+              %img.img-responsive{:src => "images/dancer-proj.jpg"}/
           .col-sm-4.portfolio-item
             %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal4"}
               .caption
                 .caption-content
                   %i.fas.fa-search-plus
                   Rails AWS Cloudformation Generator
-              %img.img-responsive{:src => "app/assets/images/railscloudform-proj.jpg"}/
+              %img.img-responsive{:src => "images/railscloudform-proj.jpg"}/
           .col-sm-4.portfolio-item
             %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal5"}
               .caption
                 .caption-content
                   %i.fas.fa-search-plus
                   Athlete JSON Service
-              %img.img-responsive{:src => "app/assets/images/sport-proj.jpg"}/
+              %img.img-responsive{:src => "images/sport-proj.jpg"}/
           .col-sm-4.portfolio-item
             %a.portfolio-link{"data-toggle" => "modal", :href => "#portfolioModal3"}
               .caption
                 .caption-content
                   %i.fas.fa-search-plus
                   Basic Captcha
-              %img.img-responsive{:src => "app/assets/images/alien-proj.jpg"}/
+              %img.img-responsive{:src => "images/alien-proj.jpg"}/
           /
             <div class="col-sm-4 portfolio-item">
             <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
@@ -127,7 +127,7 @@
             <i class="fas fa-search-plus fa-3x"></i>
             </div>
             </div>
-            <img src='app/assets/images/alien-proj.jpg' class='img-responsive'>
+            <img src='images/alien-proj.jpg' class='img-responsive'>
             </a>
             </div>
     / Contact Section
@@ -168,7 +168,7 @@
                 %h2 Survey Forms
                 %hr.star-primary/
                 %a{:href => "http://questionnaire.bencwik.com"}
-                  %img.img-responsive.img-centered{:src => "app/assets/images/question-site.jpg"}/
+                  %img.img-responsive.img-centered{:src => "images/question-site.jpg"}/
                 %p Users can create and fill out surveys, and view the responses. Utilizes Ruby on Rails w/ rpsec and bootstrap. Website is hosted on Amazon AWS.
                 %ul.list-inline.item-details
                   %li
@@ -198,7 +198,7 @@
                 %h2 Dance Trainer's Personal Career Website
                 %hr.star-primary/
                 %a{:href => "http://traceymunn.com"}
-                  %img.img-responsive.img-centered{:src => "app/assets/images/dancer-site.jpg"}/
+                  %img.img-responsive.img-centered{:src => "images/dancer-site.jpg"}/
                 %p Personal career website I designed and implemented. Based on Ruby on Rails with Bootstrap. Has a lot of media such as Youtube videos and various pictures, along with resume section with links to relevant companies. Hosted on Amazon AWS.
                 %ul.list-inline.item-details
                   %li
@@ -228,7 +228,7 @@
                 %h2 Basic Captcha
                 %hr.star-primary/
                 %a{:href => "http://alientrolls.bencwik.com"}
-                  %img.img-responsive.img-centered{:src => "app/assets/images/alien-site.jpg"}/
+                  %img.img-responsive.img-centered{:src => "images/alien-site.jpg"}/
                 %p Very basic site which asks the user to count the number words in a given sentence, but ignoring some words. User submits their response and the server determines if they are correct. Based on Ruby on Rails and hosted on Amazon AWS.
                 %ul.list-inline.item-details
                   %li
@@ -258,7 +258,7 @@
                 %h2 Rails AWS Cloud Formation Generator
                 %hr.star-primary/
                 %a{:href => "http://railscloudform.bencwik.com"}
-                  %img.img-responsive.img-centered{:src => "app/assets/images/railscloudform-site.jpg"}/
+                  %img.img-responsive.img-centered{:src => "images/railscloudform-site.jpg"}/
                 %p Easily create one-click Ruby on Rails project AWS Cloudformation templates
                 %ul.list-inline.item-details
                   %li
@@ -288,7 +288,7 @@
                 %h2 Athlete JSON Service
                 %hr.star-primary/
                 %a{:href => "http://athleteinfo.bencwik.com"}
-                  %img.img-responsive.img-centered{:src => "app/assets/images/sport-proj.jpg"}/
+                  %img.img-responsive.img-centered{:src => "images/sport-proj.jpg"}/
                 %p A simple service which returns player information in JSON format. Supports URL query params, such as position=QB. Data is imported from CBS Sports API.
                 %ul.list-inline.item-details
                   %li
@@ -317,7 +317,7 @@
               .modal-body
                 %h2 Buster: Online Charter Transportation Booking Platform
                 %hr.star-primary/
-                %img.img-responsive.img-centered{:src => "app/assets/images/buster-site.jpg"}/
+                %img.img-responsive.img-centered{:src => "images/buster-site.jpg"}/
                 %p
                   %a{:href => "https://buster.com"} Buster.com
                   is an online booking platform for chartered group transportation. I joined the company in May 2015.
@@ -334,22 +334,22 @@
                   %i.fas.fa-times
                   Close
     / plugin javascript
-    %script{:src => "app/assets/javascripts/jquery.js"}
-    %script{:src => "app/assets/javascripts/jquery_ujs.js"}
+    %script{:src => "javascripts/jquery.js"}
+    %script{:src => "javascripts/jquery_ujs.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=", :src => "https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"}
     %script{:crossorigin => "anonymous", :integrity => "sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1", :src => "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/affix.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/alert.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/button.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/carousel.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/collapse.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/dropdown.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/modal.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/scrollspy.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/tab.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/tooltip.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/transition.js"}
-    %script{:src => "app/assets/javascripts/bootstrap/popover.js"}
-    %script{:src => "app/assets/javascripts/classie.js"}
-    %script{:src => "app/assets/javascripts/cbpAnimatedHeader.js"}
-    %script{:src => "app/assets/javascripts/grayscale.js"}
+    %script{:src => "javascripts/bootstrap/affix.js"}
+    %script{:src => "javascripts/bootstrap/alert.js"}
+    %script{:src => "javascripts/bootstrap/button.js"}
+    %script{:src => "javascripts/bootstrap/carousel.js"}
+    %script{:src => "javascripts/bootstrap/collapse.js"}
+    %script{:src => "javascripts/bootstrap/dropdown.js"}
+    %script{:src => "javascripts/bootstrap/modal.js"}
+    %script{:src => "javascripts/bootstrap/scrollspy.js"}
+    %script{:src => "javascripts/bootstrap/tab.js"}
+    %script{:src => "javascripts/bootstrap/tooltip.js"}
+    %script{:src => "javascripts/bootstrap/transition.js"}
+    %script{:src => "javascripts/bootstrap/popover.js"}
+    %script{:src => "javascripts/classie.js"}
+    %script{:src => "javascripts/cbpAnimatedHeader.js"}
+    %script{:src => "javascripts/grayscale.js"}
