@@ -11,7 +11,6 @@ article,
 aside,
 details,
 figcaption,
-figure,
 footer,
 header,
 hgroup,
@@ -7920,7 +7919,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(/bcwik-site/app/assets/images/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(/app/assets/images/intro-bg.jpg) no-repeat bottom center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8023,7 +8022,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: #fff;
-  background: url(/bcwik-site/app/assets/images/about-bg.jpg) no-repeat center center scroll;
+  background: url(/app/assets/images/about-bg.jpg) no-repeat center center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -8034,7 +8033,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: #fff;
-  background: url(/bcwik-site/app/assets/images/about-bg.jpg) no-repeat center center scroll;
+  background: url(/app/assets/images/about-bg.jpg) no-repeat center center scroll;
   background-color: #000;
   -webkit-background-size: cover;
   -moz-background-size: cover;
