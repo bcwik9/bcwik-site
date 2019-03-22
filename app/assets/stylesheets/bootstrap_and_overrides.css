@@ -7937,6 +7937,9 @@ a:focus {
 .intro .intro-body .intro-text {
   font-size: 18px;
 }
+.intro .intro-body #action-button i {
+  padding-top: 7px;
+}
 @media (min-width: 767px) {
   .intro {
     height: 100%;
