@@ -7865,7 +7865,7 @@ a:focus {
   padding: 100px 0;
   text-align: center;
   color: #fff;
-  background: url(/app/assets/images/intro-bg.jpg) no-repeat bottom center scroll;
+  background: url(/images/intro-bg.jpg) no-repeat bottom center scroll;
   background-color: #000;
   background-size: cover;
   -o-background-size: cover;
@@ -7951,7 +7951,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: #fff;
-  background: url(/app/assets/images/about-bg.jpg) no-repeat center center scroll;
+  background: url(/images/about-bg.jpg) no-repeat center center scroll;
   background-color: #000;
   background-size: cover;
   -o-background-size: cover;
@@ -7960,7 +7960,7 @@ a:focus {
   width: 100%;
   padding: 50px 0;
   color: #fff;
-  background: url(/app/assets/images/about-bg.jpg) no-repeat center center scroll;
+  background: url(/images/about-bg.jpg) no-repeat center center scroll;
   background-color: #000;
   background-size: cover;
   -o-background-size: cover;
